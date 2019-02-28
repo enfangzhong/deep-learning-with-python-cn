@@ -45,47 +45,7 @@ Keras的升级也是一句话：
 sudo pip install --upgrade keras
 ```
 
-#### 4.3 配置Keras的后端
-
-Keras是Theano和TensorFlow的轻量级API，所以必须配合后端使用。后端配置只需要一个文件：
-
-```
-~/.keras/keras.json
-```
-
-里面是：
-
-```
-{"epsilon": 1e-07, "floatx": "float32", "backend": "theano"}
-```
-
-默认的后端是```theano ```，可以改成```tensorflow```。下面这行命令会显示Keras的后端：
-
-```
-python -c "from keras import backend; print backend._BACKEND"
-```
-
-默认会显示：
-
-```
-Using Theano backend.
-theano
-```
-
-变量```KERAS_BACKEND```可以控制Keras的后端，例如：
-
-```
-KERAS_BACKEND=tensorflow python -c "from keras import backend; print backend._BACKEND"
-```
-
-会输出：
-
-```
-Using TensorFlow backend.
-tensorflow
-```
-
-#### 4.4 使用Keras搭建深度学习模型
+#### 4.3 使用Keras搭建深度学习模型
 
 Keras的目标就是搭建模型。最主要的模型是```Sequential```：不同层的叠加。模型创建后可以编译，调用后端进行优化，可以指定损失函数和优化算法。
 
@@ -96,7 +56,7 @@ Keras的目标就是搭建模型。最主要的模型是```Sequential```：不�
 3. 拟合数据：使用模型的```fit()```方法拟合数据
 4. 进行预测：使用模型的```evaluate()``` 或 ```predict()```方法进行预测
 
-#### 4.5 总结
+#### 4.4 总结
 
 本章关于Keras。总结一下：
 
@@ -104,7 +64,5 @@ Keras的目标就是搭建模型。最主要的模型是```Sequential```：不�
 - Keras是最小化、模块化的封装，可以迅速上手
 - Keras可以通过定义-编译-拟合搭建模型，进行预测
 
-##### 4.5.1 下一章
 
-这是Python机器学习的最前沿：下个项目我们一步步在云上搭建机器学习的环境。
 
