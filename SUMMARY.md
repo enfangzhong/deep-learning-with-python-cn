@@ -22,4 +22,3 @@
     * [第15章 模型训练效果可视化](4-advanced-multi-layer-perceptrons-and-keras/ch15-understand-model-behavior-during-training-by-plotting-history.md)
     * [第16章 使用Dropout正则化防止过拟合](4-advanced-multi-layer-perceptrons-and-keras/ch16-reduce-overfitting-with-dropout-regularization.md)
     * [第17章 学习速度设计](4-advanced-multi-layer-perceptrons-and-keras/ch17-lift-performance-with-learning-rate-schedules.md)
-* [V 卷积神经网络](5-convolutional-neural-networks/part5.md)
